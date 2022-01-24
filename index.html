@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>HTML / CSS 9</title>
+</head>
+
+<body>
+<div id="container">
+    <header id="header">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="./"><img src="./asset/img/weblitzer.svg" alt="Logo"></a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#intro">Accueil</a></li>
+                        <li><a href="#programme">Programme</a></li>
+                        <li><a href="#register">Inscriptions</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <section id="intro">
+        <div class="intro_text">
+            <p>Bienvenue sur le site de WebForce 3 !<br> Si vous aussi vous souhaitez devenir développeur web,<br> inscrivez-vous dès maintenant !</p>
+        </div>
+        <div class="intro_register">
+            <a href="#register">Inscriptions</a>
+        </div>
+    </section>
+
+    <section id="programme">
+        <div class="wrap">
+            <div class="title">
+                <h2>Le programme</h2>
+                <div class="separator"></div>
+                <p>Le programme de formation est intensif et représente <strong>490 heures de formation</strong>.</p>
+            </div>
+            <div class="languages">
+                <div>
+                    <img src="./asset/img/html5.png" alt="HTML5">
+                    <h3>HTML5</h3>
+                    <p>L'<i>Hypertext Markup Language</i>, est le format de données conçu pour représenter les pages web.</p>
+                </div>
+                <div>
+                    <img src="./asset/img/css3.png" alt="CSS3">
+                    <h3>CSS3</h3>
+                    <p>Le CSS, de l'anglais <i>Cascading Style Sheets</i>, décrit la présentation des documents HTML et XML.</p>
+                </div>
+                <div>
+                    <img src="./asset/img/php.png" alt="PHP">
+                    <h3>PHP</h3>
+                    <p><i>PHP Hypertext Preprocessor</i> est un langage de programmation utilisé pour produire des pages Web dynamiques</p>
+                </div>
+                <div>
+                    <img src="./asset/img/wp.png" alt="Wordpress">
+                    <h3>Wordpress</h3>
+                    <p>WordPress est surtout utilisé comme moteur de blog, mais ses fonctionnalités lui permettent de <strong>gérer n'importe quel site web</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="wrap2">
+            <div class="title">
+                <h2>Inscriptions</h2>
+                <div class="separator separator_color2"></div>
+                <p>Si vous souhaitez vous inscrire pour la prochaine session de Webforce 3, remplissez le formulaire suivant :</p>
+            </div>
+
+            <div class="register_form">
+                <form action="#">
+                    <div class="small_fields">
+                        <div class="field">
+                            <label for="nom">Votre Nom <span class="required_field">*</span></label>
+                            <input class="input-error" type="text" placeholder="Ex: John Doe" id="nom" name="nom">
+                            <span class="error">Ce champ ne doit pas être vide</span>
+                        </div>
+                        <div class="field">
+                            <label for="email">Votre Email <span class="required_field">*</span></label>
+                            <input type="text" placeholder="Ex: john.doe@wf3.fr" id="email" name="email">
+                            <span class="error"></span>
+                        </div>
+                    </div>
+                    <div class="field field_message">
+                        <label for="message">Votre Message <span class="required_field">*</span></label>
+                        <textarea placeholder="Bonjour..." name="message" id="message"></textarea>
+                        <span class="error"></span>
+                    </div>
+                    <div class="field field_submit">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy;2015 - WebForce 3 &reg;</p>
+        <div class="retour_haut">
+            <a href="#">Retour en haut</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
